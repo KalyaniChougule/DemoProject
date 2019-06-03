@@ -1,6 +1,6 @@
 pipeline {
-
-  agent any
+agent {
+        label 'master'
    
 stages {
   stage('Build') {
@@ -8,11 +8,14 @@ stages {
         bat 'mvn package'
       }
     }
+    
+
        stage('Junit Test Case') {
       steps {
         bat 'mvn test'
       }
     }
+    
     
         stage('SonarQube analysis') {
             steps {
@@ -22,3 +25,4 @@ stages {
             }
             }
            }
+          }
