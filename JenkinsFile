@@ -14,10 +14,11 @@ stages {
       }
     }
     
-
         stage('SonarQube analysis') {
             steps {
                             
                 bat 'mvn  sonar:sonar'
                 }
             }
+            }
+           }
