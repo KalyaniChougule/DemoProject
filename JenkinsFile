@@ -28,7 +28,7 @@ stages {
    stage('PMD analysis') {
             steps {
                             
-                bat 'mvn clean install pmd:pmd'
+                bat 'mvn pmd:pmd'
                 }
             }
        }
