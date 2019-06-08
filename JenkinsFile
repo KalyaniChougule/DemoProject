@@ -31,6 +31,14 @@ stages {
                 bat 'mvn pmd:pmd'
                 }
             }
+            
+             stage('build Image') {
+            steps {
+                            
+                app=docker.build("anandr72/nodeapp")
+                }
+            }
+       
        }
    }
            
