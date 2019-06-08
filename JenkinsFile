@@ -35,7 +35,7 @@ stages {
              stage('build Image') {
             steps {
                             
-                app=docker.build("anandr72/nodeapp")
+               docker.build("anandr72/nodeapp")
                 }
             }
        
