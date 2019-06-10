@@ -34,7 +34,7 @@ stages {
             
              stage('build Image') {
             steps {
-                app = docker build -t demoimage
+                 docker build -t demoimage
                 }
             }
        
