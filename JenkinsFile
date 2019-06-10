@@ -34,8 +34,7 @@ stages {
             
              stage('build Image') {
             steps {
-                            
-               docker.build("anandr72/nodeapp")
+                app = docker.build("getintodevops/hellonode")
                 }
             }
        
