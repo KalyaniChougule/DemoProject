@@ -32,11 +32,7 @@ stages {
                 }
             }
             
-             stage('build Image') {
-            steps {
-                 docker build .
-                }
-            }
+             
        
        }
    }
