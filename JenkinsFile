@@ -39,14 +39,7 @@ stages {
                 }
             }
             
-            stage('Test Image')
-            {
-            steps
-            {
-               .inside
-               echo "test passed"
-            }     
-         }
+           
        }
        }
   
