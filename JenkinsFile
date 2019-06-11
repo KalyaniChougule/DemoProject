@@ -43,7 +43,7 @@ stages {
             {
             steps
             {
-               app.inside
+               .inside
                echo "test passed"
             }     
          }
