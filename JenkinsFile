@@ -31,8 +31,13 @@ stages {
                 bat 'mvn pmd:pmd'
                 }
             }
+             stage('Build Image') {
+            steps {
+                            
+                   docker build .
+                }
+            }
             
-             
        
        }
    }
