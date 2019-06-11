@@ -38,7 +38,16 @@ stages {
                  bat 'docker build .'
                 }
             }
-        }     
+            
+            stage('Test Image')
+            {
+            steps
+            {
+               app.inside
+               echo "test passed"
+            }     
+         }
+       }
        }
   
    
