@@ -38,8 +38,9 @@ stages {
                    docker build .
                 }
             }
+            }
             
-       
        }
+  
    
            
