@@ -1,4 +1,4 @@
-FROM java:oracle/java8
+FROM java:Dockerfile/oracle/java8
 
 ENV MAVEN_VERSION 3.2.5
 
